@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.text_view);
         textView.setText(textInputString);
     }
-
+    //using two activities in place of fragments
     public void startListActivity(){
         Intent intent = new Intent(this, ListActivity.class);
         intent.putExtra("inputArray", inputArray);
