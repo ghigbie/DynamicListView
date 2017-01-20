@@ -10,8 +10,54 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.geogehigbie.dynamiclistview.MainActivity">
 
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorEditBackground"
+        android:hint="1, 2, 3, etc."
+        android:padding="2dp"
+        android:textColorHint="#d3d3d3" />
+
+    <LinearLayout
+        android:id="@+id/linear_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text"
+        android:layout_marginBottom="@dimen/element_margin"
+        android:layout_marginTop="@dimen/element_margin">
+
+        <Button
+            android:id="@+id/parse_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/element_margin"
+            android:layout_weight="1"
+            android:background="@color/colorButton"
+            android:text="@string/parse"
+            android:textColor="@color/colorEditBackground"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/view_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorButton"
+            android:text="@string/view"
+            android:textColor="@color/colorEditBackground"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
     <TextView
+        android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_below="@+id/linear_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/instructions" />
+
+
 </RelativeLayout>
