@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DevTest</string>
+    <string name="app_name">Dynamic ListView</string>
     <string name="hint">1, 2, 3, etc...</string>
     <string name="parse">Parse</string>
     <string name="view">View</string>
